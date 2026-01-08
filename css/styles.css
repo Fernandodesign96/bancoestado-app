@@ -1,0 +1,38 @@
+:root {
+  --be-orange: #ff6a00;
+  --be-blue: #003a8f;
+  --bg-light: #f7f7f8;
+  --text-dark: #1a1a1a;
+  --border-soft: #e0e0e0;
+}
+
+body {
+  font-family: Inter, system-ui, sans-serif;
+}
+
+.mobile-frame {
+  max-width: 390px;
+  min-height: 100vh;
+  background: var(--bg-light);
+}
+
+.saldo-card {
+  border-radius: 16px;
+  border: none;
+  background: linear-gradient(135deg, var(--be-blue), var(--be-orange));
+  color: white;
+}
+
+.action-card {
+  display: block;
+  padding: 24px;
+  border-radius: 16px;
+  background: white;
+  border: 1px solid var(--border-soft);
+  text-decoration: none;
+  color: var(--text-dark);
+}
+
+.action-card.disabled {
+  opacity: 0.4;
+}
